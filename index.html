@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="input-container">
+        <div id="history-icon" class="history">🕒</div>
+        <div id="history-modal" class="hidden">
+          <h3 class="name-history">Історія обчислень</h3>
+          <div class="history-list-container">
+            <ul id="history-list" class="history-list-ul"></ul>
+          </div>
+          <button id="close-history" class="close-history-button">
+            Закрити
+          </button>
+        </div>
+        <input class="input-main" disabled />
+      </div>
+      <div class="number-container">
+        <button class="number-container-0" id="1">х²</button>
+        <button class="number-container-0" id="2">√</button>
+        <button class="number-container-0" id="3">C</button>
+        <button class="number-container-0" id="4">+</button>
+
+        <button class="number-container-1" id="5">1</button>
+        <button class="number-container-1" id="6">2</button>
+        <button class="number-container-1" id="7">3</button>
+        <button class="number-container-1" id="8">-</button>
+
+        <button class="number-container-2" id="9">4</button>
+        <button class="number-container-2" id="10">5</button>
+        <button class="number-container-2" id="11">6</button>
+        <button class="number-container-2" id="12">х</button>
+
+        <button class="number-container-3" id="13">7</button>
+        <button class="number-container-3" id="14">8</button>
+        <button class="number-container-3" id="15">9</button>
+        <button class="number-container-3" id="16">÷</button>
+
+        <button class="number-container-4" id="17">+/-</button>
+        <button class="number-container-4" id="18">0</button>
+        <button class="number-container-4" id="19">,</button>
+        <button class="number-container-4" id="20">=</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
