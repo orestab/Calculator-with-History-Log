@@ -104,7 +104,7 @@ body {
   border-radius: 20px;
 }
 
-.input-main {
+.div-input-main {
   height: 110px;
   width: 340px;
   border-radius: 20px;
@@ -127,12 +127,39 @@ body {
   color: #000000;
 }
 
+.input-main {
+  height: 60px;
+  width: 280px;
+  padding: 5px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1.5px solid rgba(255, 255, 255, 0.247);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.3),
+    inset 0 6px 10px rgba(255, 255, 255, 0.25),
+    inset 0 -6px 12px rgba(0, 0, 0, 0.15);
+
+  position: absolute;
+  top: 48.5%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  text-align: none;
+  font-size: 45px;
+  cursor: default;
+  color: #000000;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
 .history {
   cursor: pointer;
+  width: 24px;
   font-size: 24px;
   margin-top: 55px;
   margin-right: 10px;
-  direction: rtl;
+  margin-left: 300px;
   position: relative;
   z-index: 10;
 }
@@ -312,4 +339,58 @@ body {
   left: 50%;
   top: 90%;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    width: 90vw;
+    height: auto;
+    min-height: 500px;
+    padding-bottom: 20px;
+  }
+
+  .div-input-main {
+    width: 85vw;
+    top: 15%;
+  }
+
+  .input-main {
+    width: 70vw;
+    font-size: 35px;
+  }
+
+  .history {
+    margin-left: 0;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+
+  .number-container {
+    width: 85vw;
+    height: auto;
+    top: 60%;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .number-container button {
+    width: 18vw;
+    height: 18vw;
+    margin: 1vw;
+    font-size: 1.2rem;
+  }
+  .hidden-1 {
+    width: 95vw;
+    left: 50%;
+    z-index: 1000;
+  }
+
+  .name-history,
+  .close-history-button,
+  .history-list-container {
+    width: 90%;
+  }
 }
